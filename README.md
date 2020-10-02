@@ -37,4 +37,5 @@ Coursework of SUSTech CS323-Compilers (2020fall)
   + Parsing malformed JSON: [A Dirty JSON Parser](https://rmarcus.info/blog/2014/10/05/dirty-json-parser.html)
 
 PS:
-all *.md files belong to CC-BY-NC-SA-4.0 LICENSE.
+1. all *.md files belong to CC-BY-NC-SA-4.0 LICENSE.
+2. This is only framework, should full codes in files.

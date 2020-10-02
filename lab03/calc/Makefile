@@ -8,7 +8,7 @@ BISON=bison
 .syntax: syntax.y
 	$(BISON) -t -d syntax.y
 calc: .lex .syntax
-	$(CC) syntax.tab.c -lfl -ly -D CALC_MAIN -o calc.out
+	$(CC) syntax.tab.c -lfl -ly  -o calc.out
 libcalc: .lex .syntax
 	$(CC) syntax.tab.c -lfl -ly -fPIC --shared -o libcalc.so
 clean:

@@ -6,7 +6,7 @@ set -eoux pipefail
  # @Author: nanoseeds
  # @Date: 2020-09-23 01:30:40
  # @LastEditors: nanoseeds
- # @LastEditTime: 2020-09-30 01:18:58
+ # @LastEditTime: 2020-10-02 23:00:42
 ### 
 #! on work on ubuntu1804!
 
@@ -20,7 +20,6 @@ compiler() {
   cd "${CMAKE_DIR}"
   cmake ..
   make -j "$(nproc)"
-  cp ./jp.out ./../jp.out
   cd ..
 }
 run_test() {

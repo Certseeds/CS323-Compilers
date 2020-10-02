@@ -1,6 +1,7 @@
 %{
     #include"syntax.tab.h"
 %}
+%option noyywrap
 %%
 [0-9]+ { yylval = atoi(yytext); return INT; }
 "+" { return ADD; }

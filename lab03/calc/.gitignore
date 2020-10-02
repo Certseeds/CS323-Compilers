@@ -4,7 +4,7 @@
 ## @Author: nanoseeds
 ## @Date: 2020-09-22 23:27:17
 ## @LastEditors: nanoseeds
-## @LastEditTime: 2020-09-23 01:31:21
+## @LastEditTime: 2020-10-02 22:17:59
 ### 
 *
 !.gitignore
@@ -15,3 +15,4 @@
 !syntax.y
 !CMakeLists.txt
 !judge.sh
+!README.md

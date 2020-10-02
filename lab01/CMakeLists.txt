@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.16.6)
 project(CS323-Compliers-lab01 LANGUAGES C)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11 -Wall -Wextra -fPIC")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
 
 add_library(ll
         SHARED

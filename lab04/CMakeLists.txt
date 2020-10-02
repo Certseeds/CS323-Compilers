@@ -7,24 +7,19 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lfl -ly")
 FIND_PACKAGE(FLEX REQUIRED)
 FIND_PACKAGE(BISON REQUIRED)
 FLEX_TARGET(lexer
-    lex.l ${CMAKE_SOURCE_DIR}/lex.yy.c)
+    lex.l ${CMAKE_CURRENT_BINARY_DIR}/lex.yy.c)
 BISON_TARGET(parser
-    syntax.y ${CMAKE_SOURCE_DIR}/syntax.tab.c)
+    syntax.y ${CMAKE_CURRENT_BINARY_DIR}/syntax.tab.c)
 ADD_FLEX_BISON_DEPENDENCY(lexer parser)
 
 
-ADD_LIBRARY(useless
+ADD_LIBRARY(${PROJECT_NAME}_lexer
      SHARED
-     ${CMAKE_SOURCE_DIR}/lex.yy.c
+     ${CMAKE_CURRENT_BINARY_DIR}/lex.yy.c
 )
 
 add_executable(
-          jp.out
+    ${PROJECT_NAME}_jp.out
      ./syntax.tab.c)
 
-# ADD_LIBRARY(useless2
-#      SHARED
-#      ${CMAKE_SOURCE_DIR}/syntax.tab.c
-# )
-# TARGET_LINK_LIBRARIES(useless2 useless)
-TARGET_LINK_LIBRARIES(jp.out useless)
+TARGET_LINK_LIBRARIES(${PROJECT_NAME}_jp.out ${PROJECT_NAME}_lexer)

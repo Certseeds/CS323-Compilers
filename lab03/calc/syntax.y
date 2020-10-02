@@ -21,7 +21,7 @@ Factor: INT
 void yyerror(const char *s){
     fprintf(stderr, "Syntax error: %s\n", s);
 }
-
+#define CALC_MAIN
 #ifndef CALC_MAIN
 int evaluate(char *expr){
     YY_BUFFER_STATE buf;

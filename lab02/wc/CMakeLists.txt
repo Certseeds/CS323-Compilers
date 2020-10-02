@@ -12,7 +12,7 @@ IF (FLEX_FOUND)
             OUTPUT ${FlexOutput}
             COMMAND ${FLEX_EXECUTABLE}
             --outfile=${FlexOutput}
-            ${CMAKE_SOURCE_DIR}/lex.l
+            ${CMAKE_CURRENT_SOURCE_DIR}/lex.l
     )
 ENDIF ()
 add_executable(wc.out ${FlexOutput})
