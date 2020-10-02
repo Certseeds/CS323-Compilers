@@ -6,7 +6,7 @@ set -eoux pipefail
  # @Author: nanoseeds
  # @Date: 2020-09-09 12:47:03
  # @LastEditors: nanoseeds
- # @LastEditTime: 2020-10-02 20:05:17
+ # @LastEditTime: 2020-10-02 23:38:25
 ### 
 CMAKE_DIR="cmake-build-debug"
 cmake_ensure_dir() {
@@ -20,7 +20,7 @@ compiler() {
   cd "${CMAKE_DIR}"
   cmake ..
   make -j "$(nproc)"
-  ./CS323_Compilers_lab01_hello.out
+  ./CS323_compilers_lab01_hello.out
   ./CS323_Compilers_lab01_ll_main.out
   cd ..
 }

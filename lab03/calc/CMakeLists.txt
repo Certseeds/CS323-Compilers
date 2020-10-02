@@ -32,4 +32,5 @@ ADD_LIBRARY(${PROJECT_NAME}_calc
         SHARED
         ${CMAKE_CURRENT_BINARY_DIR}/syntax.tab.c
         )
+        
 TARGET_LINK_LIBRARIES(${PROJECT_NAME}_calc ${PROJECT_NAME}_lexer)
