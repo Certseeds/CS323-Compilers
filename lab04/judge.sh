@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eoux pipefail
 ###
- # @Github: https://github.com/Certseeds/CS323_Compilers_2020F
+ # @Github: https://github.com/Certseeds/CS323-Compilers
  # @Organization: SUSTech
  # @Author: nanoseeds
  # @Date: 2020-09-23 01:30:40

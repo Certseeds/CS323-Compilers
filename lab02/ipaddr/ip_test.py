@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-# encoding: utf-8
+# coding=utf-8
+'''
+Github: https://github.com/Certseeds/CS323-Compilers
+Organization: SUSTech
+Author: nanoseeds
+Date: 2020-09-16 16:35:52
+LastEditors: nanoseeds
+LastEditTime: 2020-10-02 20:05:33
+'''
 
 import ctypes
 import os
@@ -15,7 +23,7 @@ https://leetcode.com/problems/validate-ip-address/
 
 
 cwd = os.getcwd()
-lib_path = os.path.join(cwd, 'libip.so')
+lib_path = os.path.join(cwd, 'cmake-build-debug/libip.so')
 lib = ctypes.cdll.LoadLibrary(lib_path)
 
 def valid_ip_address(ip):

@@ -5,8 +5,8 @@ set -eoux pipefail
 # @Organization: SUSTech
 # @Author: nanoseeds
 # @Date: 2020-09-16 16:36:39
- # @LastEditors: Please set LastEditors
- # @LastEditTime: 2020-09-16 18:45:03
+ # @LastEditors: nanoseeds
+ # @LastEditTime: 2020-10-02 20:05:41
 ###
 CMAKE_DIR="cmake-build-debug"
 main() {
@@ -26,7 +26,6 @@ compiler() {
   cd "${CMAKE_DIR}"
   cmake ..
   make -j "$(nproc)"
-  cp ./libip.so ./../libip.so
   cd ..
 }
 run_test() {

@@ -1,12 +1,12 @@
 #!/bin/bash
 set -eoux pipefail
 ###
- # @Github: https://github.com/Certseeds/CS323_Compilers_2020F
+ # @Github: https://github.com/Certseeds/CS323-Compilers
  # @Organization: SUSTech
  # @Author: nanoseeds
  # @Date: 2020-09-23 01:30:40
  # @LastEditors: nanoseeds
- # @LastEditTime: 2020-09-23 02:26:26
+ # @LastEditTime: 2020-10-02 20:06:37
 ### 
 #! on work on ubuntu1804!
 CMAKE_DIR="cmake-build-debug"
@@ -19,7 +19,6 @@ compiler() {
   cd "${CMAKE_DIR}"
   cmake ..
   make -j "$(nproc)"
-  cp ./libcalc.so ./../libcalc.so
   cd ..
 }
 run_test() {
